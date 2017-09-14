@@ -8,8 +8,6 @@ class Rating {
 
     static constraints = {
         ratingNumber nullable: false, blank: false
-        ratingType nullable: false, blank: false
-        generalRating nullable: false, blank: false
         comment nullable: true, blank: true
     }
 

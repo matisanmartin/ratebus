@@ -2,7 +2,7 @@ package ratebus
 
 class Transport {
 
-    Set<GeneralRating> allRatings
+    protected Set<GeneralRating> allRatings
 
     static constraints = {
     }

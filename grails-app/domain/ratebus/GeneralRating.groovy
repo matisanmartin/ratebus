@@ -2,12 +2,12 @@ package ratebus
 
 class GeneralRating {
 
-     List<Rating> ratings
+    List<Rating> ratings
 
     static constraints = {
     }
 
     def calculateGeneralRating() {
-        ratings*.getRatingNumberValue().sum()/ratings.size()
+        ratings*.getRatingNumberValue().sum() / ratings.size()
     }
 }
