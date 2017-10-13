@@ -3,19 +3,19 @@ package ratebus
 import grails.gorm.transactions.Transactional
 
 @Transactional
-class ManageAccountService {
+class ManageUserService {
 
-    def createAccount(Map attrs) {
+    def createUser(Map attrs) {
         User user = new User(attrs)
         user.create()
     }
 
-    def editAccount(Map attrs) {
+    def editUser(Map attrs) {
         User user = User.get(attrs.get('username'))
         user.editAccount(attrs)
     }
 
-    def deleteAccount(String username) {
+    def deleteUser(String username) {
         User user = user.get(username)
         user.delete()
     }

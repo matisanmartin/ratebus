@@ -3,7 +3,7 @@ package ratebus
 import grails.testing.services.ServiceUnitTest
 import spock.lang.Specification
 
-class ManageAccountServiceSpec extends Specification implements ServiceUnitTest<ManageAccountService>{
+class ManageUserServiceSpec extends Specification implements ServiceUnitTest<ManageUserService>{
 
     def setup() {
     }
