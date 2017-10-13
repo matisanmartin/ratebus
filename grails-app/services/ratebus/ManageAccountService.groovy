@@ -5,7 +5,6 @@ import grails.gorm.transactions.Transactional
 @Transactional
 class ManageAccountService {
 
-
     def createAccount(Map attrs) {
         User user = new User(attrs)
         user.create()
@@ -20,5 +19,5 @@ class ManageAccountService {
         User user = user.get(username)
         user.delete()
     }
-    
+
 }

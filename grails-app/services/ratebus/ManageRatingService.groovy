@@ -5,10 +5,6 @@ import grails.gorm.transactions.Transactional
 @Transactional
 class ManageRatingService {
 
-    def serviceMethod() {
-
-    }
-
     def addNewRating(String username, Long transportId, GeneralRating newRating) {
         User user = User.get(username)
         Transport transport = Transport.get(transportId)

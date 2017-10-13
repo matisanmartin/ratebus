@@ -4,8 +4,6 @@ import groovy.time.TimeCategory
 
 class Transport {
 
-    protected Long id
-
     protected String name
 
     protected String ownerCompany
@@ -21,6 +19,22 @@ class Transport {
     protected Set<GeneralRating> allRatings
 
     static constraints = {
+    }
+
+    def getCleannesRating() {
+        allRatings.collect({ it.getCleannessRating() }).sum() / allRatings.size()
+    }
+
+    def getConditionRating() {
+        allRatings.collect { it.getConditionRating() }.sum() / allRatings.size()
+    }
+
+    def getRouteRating() {
+        allRatings.collect { it.getRouteRating() }.sum() / allRatings.size()
+    }
+
+    def getFrequencyRating() {
+        allRatings.collect { it.getFrequencyRating() }.sum() / allRatings.size()
     }
 
     def getGeneralRating() {

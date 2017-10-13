@@ -1,5 +1,6 @@
 package ratebus
 
+
 class User {
 
     String username

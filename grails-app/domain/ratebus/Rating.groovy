@@ -1,6 +1,6 @@
 package ratebus
 
-class Rating {
+abstract class Rating implements RatingCalculator {
 
     RatingNumber ratingNumber
 

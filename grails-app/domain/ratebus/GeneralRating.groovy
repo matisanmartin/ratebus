@@ -27,6 +27,23 @@ class GeneralRating {
     }
 
     def getFeaturesAccumulated() {
-        features.count { it.isPresent() }/FEATURE_ACCUM_FACTOR
+        features.count { it.isPresent() } / FEATURE_ACCUM_FACTOR
     }
+
+    def getCleannessRating() {
+        ratings.collect{ it.getCleannessRating() }.sum() / ratings.size()
+    }
+
+    def getConditionRating() {
+        ratings.collect { it.getCleannessRating() }.sum() / ratings.size()
+    }
+
+    def getFrequencyRating() {
+        ratings.collect { it.getCleannessRating() }.sum() / ratings.size()
+    }
+
+    def getRouteRating() {
+        ratings.collect { it.getRouteRating() }.sum() / ratings.size()
+    }
+
 }

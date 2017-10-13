@@ -18,9 +18,12 @@ class TransportSpec extends Specification implements DomainUnitTest<Transport> {
                    new ConditionRating(ratingNumber: Rating.RatingNumber.GOOD)
         ]
 
-        generalRatings = [new GeneralRating(ratings: ratings)]
+        def generalRating = new GeneralRating(ratings: ratings)
+        generalRating.features = []
+        generalRatings = [generalRating]
 
         transport = new Transport(allRatings: generalRatings)
+
     }
 
     def cleanup() {

@@ -9,13 +9,13 @@ class GeneralRatingSpec extends Specification implements DomainUnitTest<GeneralR
     GeneralRating generalRating
 
     def setup() {
-        ratings = [new Rating(ratingNumber: Rating.RatingNumber.GOOD),
-                   new Rating(ratingNumber: Rating.RatingNumber.GOOD),
-                   new Rating(ratingNumber: Rating.RatingNumber.GOOD),
-                   new Rating(ratingNumber: Rating.RatingNumber.GOOD)
+        ratings = [new ConditionRating(ratingNumber: Rating.RatingNumber.GOOD),
+                   new ConditionRating(ratingNumber: Rating.RatingNumber.GOOD),
+                   new ConditionRating(ratingNumber: Rating.RatingNumber.GOOD),
+                   new ConditionRating(ratingNumber: Rating.RatingNumber.GOOD)
         ]
 
-        generalRating = new GeneralRating(ratings: ratings)
+        generalRating = new GeneralRating(ratings: ratings, features: [])
     }
 
     def cleanup() {
