@@ -10,4 +10,11 @@ class RatingSearchService {
         GeneralRating.findAllByUser(user).sort { a,b -> b.creationDate <=> a.creationDate}
     }
 
+    def getTransportRating(Long transportId) {
+        Transport.get(transportId).allRatings
+    }
+
+    def getRating(Long ratingId) {
+        Rating.get(ratingId)
+    }
 }
