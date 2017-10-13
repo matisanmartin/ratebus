@@ -1,4 +1,6 @@
-package ratebus
+package ratebus.user
+
+import ratebus.transport.Transport
 
 
 class User {

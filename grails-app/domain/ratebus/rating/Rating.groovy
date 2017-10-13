@@ -1,4 +1,6 @@
-package ratebus
+package ratebus.rating
+
+import ratebus.RatingCalculator
 
 abstract class Rating implements RatingCalculator {
 

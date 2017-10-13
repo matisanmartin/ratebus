@@ -1,6 +1,7 @@
 package ratebus
 
 import grails.testing.gorm.DomainUnitTest
+import ratebus.feature.HeatingFeature
 import spock.lang.Specification
 
 class HeatingFeatureSpec extends Specification implements DomainUnitTest<HeatingFeature> {

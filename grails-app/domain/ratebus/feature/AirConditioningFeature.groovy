@@ -1,4 +1,4 @@
-package ratebus
+package ratebus.feature
 
 class AirConditioningFeature {
 

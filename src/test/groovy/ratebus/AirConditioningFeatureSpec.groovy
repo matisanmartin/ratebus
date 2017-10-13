@@ -1,6 +1,7 @@
 package ratebus
 
 import grails.testing.gorm.DomainUnitTest
+import ratebus.feature.AirConditioningFeature
 import spock.lang.Specification
 
 class AirConditioningFeatureSpec extends Specification implements DomainUnitTest<AirConditioningFeature> {

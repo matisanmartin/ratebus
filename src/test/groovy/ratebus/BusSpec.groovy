@@ -1,6 +1,7 @@
 package ratebus
 
 import grails.testing.gorm.DomainUnitTest
+import ratebus.transport.Bus
 import spock.lang.Specification
 
 class BusSpec extends Specification implements DomainUnitTest<Bus> {

@@ -1,4 +1,4 @@
-package ratebus
+package ratebus.user
 
 class Address {
 

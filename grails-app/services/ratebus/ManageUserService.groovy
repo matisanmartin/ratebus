@@ -1,6 +1,7 @@
 package ratebus
 
 import grails.gorm.transactions.Transactional
+import ratebus.user.User
 
 @Transactional
 class ManageUserService {

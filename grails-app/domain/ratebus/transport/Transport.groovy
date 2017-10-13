@@ -1,6 +1,9 @@
-package ratebus
+package ratebus.transport
 
 import groovy.time.TimeCategory
+import ratebus.rating.GeneralRating
+import ratebus.user.User
+import ratebus.user.Address
 
 class Transport {
 

@@ -1,4 +1,4 @@
-package ratebus
+package ratebus.rating
 
 class CleannessRating extends Rating {
 

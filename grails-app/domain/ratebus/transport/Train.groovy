@@ -1,6 +1,6 @@
-package ratebus
+package ratebus.transport
 
-class Subway extends Transport {
+class Train extends Transport {
 
     static constraints = {
         importFrom Transport

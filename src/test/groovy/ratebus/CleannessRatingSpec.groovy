@@ -1,6 +1,7 @@
 package ratebus
 
 import grails.testing.gorm.DomainUnitTest
+import ratebus.rating.CleannessRating
 import spock.lang.Specification
 
 class CleannessRatingSpec extends Specification implements DomainUnitTest<CleannessRating> {

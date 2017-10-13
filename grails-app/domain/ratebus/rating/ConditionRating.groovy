@@ -1,6 +1,6 @@
-package ratebus
+package ratebus.rating
 
-class RouteRating extends Rating {
+class ConditionRating extends Rating {
 
     static constraints = {
         importFrom Rating
@@ -13,12 +13,12 @@ class RouteRating extends Rating {
 
     @Override
     def getRouteRating() {
-        getRatingNumberValue()
+        0
     }
 
     @Override
     def getConditionRating() {
-        0
+        getRatingNumberValue()
     }
 
     @Override

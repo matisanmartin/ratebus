@@ -1,6 +1,7 @@
 package ratebus
 
 import grails.testing.gorm.DomainUnitTest
+import ratebus.user.Address
 import spock.lang.Specification
 
 class AddressSpec extends Specification implements DomainUnitTest<Address> {

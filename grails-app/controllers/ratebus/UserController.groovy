@@ -1,5 +1,7 @@
 package ratebus
 
+import ratebus.user.User
+
 class UserController {
 
     static scaffold = User

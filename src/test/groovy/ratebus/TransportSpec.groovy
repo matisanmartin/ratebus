@@ -1,6 +1,13 @@
 package ratebus
 
 import grails.testing.gorm.DomainUnitTest
+import ratebus.rating.CleannessRating
+import ratebus.rating.ConditionRating
+import ratebus.rating.FrequencyRating
+import ratebus.rating.GeneralRating
+import ratebus.rating.Rating
+import ratebus.rating.RouteRating
+import ratebus.transport.Transport
 import spock.lang.Specification
 
 class TransportSpec extends Specification implements DomainUnitTest<Transport> {

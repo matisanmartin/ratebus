@@ -1,6 +1,6 @@
-package ratebus
+package ratebus.rating
 
-class ConditionRating extends Rating {
+class FrequencyRating extends Rating {
 
     static constraints = {
         importFrom Rating

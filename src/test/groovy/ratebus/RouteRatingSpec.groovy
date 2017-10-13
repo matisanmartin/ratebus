@@ -1,6 +1,7 @@
 package ratebus
 
 import grails.testing.gorm.DomainUnitTest
+import ratebus.rating.RouteRating
 import spock.lang.Specification
 
 class RouteRatingSpec extends Specification implements DomainUnitTest<RouteRating> {

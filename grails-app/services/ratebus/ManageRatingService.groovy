@@ -1,6 +1,9 @@
 package ratebus
 
 import grails.gorm.transactions.Transactional
+import ratebus.rating.GeneralRating
+import ratebus.transport.Transport
+import ratebus.user.User
 
 @Transactional
 class ManageRatingService {

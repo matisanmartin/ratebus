@@ -1,4 +1,7 @@
-package ratebus
+package ratebus.rating
+
+import ratebus.feature.Feature
+import ratebus.user.User
 
 class GeneralRating {
 

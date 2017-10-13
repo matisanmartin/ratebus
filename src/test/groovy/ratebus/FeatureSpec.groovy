@@ -1,6 +1,7 @@
 package ratebus
 
 import grails.testing.gorm.DomainUnitTest
+import ratebus.feature.Feature
 import spock.lang.Specification
 
 class FeatureSpec extends Specification implements DomainUnitTest<Feature> {

@@ -1,7 +1,7 @@
 package ratebus
 
 import grails.testing.gorm.DomainUnitTest
-import org.yaml.snakeyaml.introspector.MissingProperty
+import ratebus.user.User
 import spock.lang.Specification
 
 class UserSpec extends Specification implements DomainUnitTest<User> {

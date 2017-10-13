@@ -1,4 +1,4 @@
-package ratebus
+package ratebus.transport
 
 class Cab extends Transport {
 
