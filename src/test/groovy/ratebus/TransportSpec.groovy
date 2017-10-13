@@ -13,7 +13,7 @@ class TransportSpec extends Specification implements DomainUnitTest<Transport> {
 
     def setup() {
         ratings = [new CleannessRating(ratingNumber: Rating.RatingNumber.GOOD),
-                   new StopsRating(ratingNumber: Rating.RatingNumber.GOOD),
+                   new RouteRating(ratingNumber: Rating.RatingNumber.GOOD),
                    new FrequencyRating(ratingNumber: Rating.RatingNumber.GOOD),
                    new ConditionRating(ratingNumber: Rating.RatingNumber.GOOD)
         ]
