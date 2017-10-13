@@ -18,6 +18,12 @@ class User {
 
     Gender gender
 
+    List<Transport> qualifiedTransports
+
+    def editAccount(Map map) {
+        properties = map
+    }
+
     enum Gender {
         M,F,X
     }
@@ -31,5 +37,8 @@ class User {
         surname blank: true, nullable: true
         birthday blank: true, nullable: true
         gender blank: true, nullable: true
+        qualifiedTransports nullable: true
     }
+
+
 }
