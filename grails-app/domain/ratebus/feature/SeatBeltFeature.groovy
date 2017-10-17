@@ -1,6 +1,6 @@
 package ratebus.feature
 
-class SeatBeltFeature {
+class SeatBeltFeature extends Feature {
 
     static constraints = {
     }

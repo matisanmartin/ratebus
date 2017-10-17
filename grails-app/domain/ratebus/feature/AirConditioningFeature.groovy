@@ -1,6 +1,6 @@
 package ratebus.feature
 
-class AirConditioningFeature {
+class AirConditioningFeature extends Feature {
 
     static constraints = {
     }

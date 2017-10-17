@@ -1,6 +1,6 @@
 package ratebus.feature
 
-class WifiFeature {
+class WifiFeature extends Feature{
 
     static constraints = {
     }

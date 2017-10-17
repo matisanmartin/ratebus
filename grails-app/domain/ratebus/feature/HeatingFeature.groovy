@@ -1,6 +1,6 @@
 package ratebus.feature
 
-class HeatingFeature {
+class HeatingFeature extends Feature{
 
     static constraints = {
     }

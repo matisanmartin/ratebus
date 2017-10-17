@@ -1,6 +1,6 @@
 package ratebus.feature
 
-class DoubleUnitFeature {
+class DoubleUnitFeature extends Feature {
 
     static constraints = {
     }
