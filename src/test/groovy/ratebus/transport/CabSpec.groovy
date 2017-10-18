@@ -1,10 +1,10 @@
-package ratebus
+package ratebus.transport
 
 import grails.testing.gorm.DomainUnitTest
-import ratebus.rating.FrequencyRating
+import ratebus.transport.Cab
 import spock.lang.Specification
 
-class FrequencyRatingSpec extends Specification implements DomainUnitTest<FrequencyRating> {
+class CabSpec extends Specification implements DomainUnitTest<Cab> {
 
     def setup() {
     }

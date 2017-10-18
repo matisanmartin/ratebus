@@ -1,4 +1,4 @@
-package ratebus
+package ratebus.transport
 
 import grails.testing.gorm.DomainUnitTest
 import ratebus.rating.CleannessRating

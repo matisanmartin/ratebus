@@ -1,10 +1,10 @@
-package ratebus
+package ratebus.transport
 
 import grails.testing.gorm.DomainUnitTest
-import ratebus.feature.Feature
+import ratebus.transport.Subway
 import spock.lang.Specification
 
-class FeatureSpec extends Specification implements DomainUnitTest<Feature> {
+class SubwaySpec extends Specification implements DomainUnitTest<Subway> {
 
     def setup() {
     }

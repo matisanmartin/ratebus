@@ -1,4 +1,4 @@
-package ratebus
+package ratebus.user
 
 import grails.testing.gorm.DomainUnitTest
 import ratebus.user.User
@@ -17,7 +17,7 @@ class UserSpec extends Specification implements DomainUnitTest<User> {
 
     void "test create user with null username"() {
         when:
-        user.username == null
+        user.username = null
 
         then:
         !user.validate(['username'])

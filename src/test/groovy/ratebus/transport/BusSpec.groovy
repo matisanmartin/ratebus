@@ -1,10 +1,10 @@
-package ratebus
+package ratebus.transport
 
 import grails.testing.gorm.DomainUnitTest
-import ratebus.feature.HeatingFeature
+import ratebus.transport.Bus
 import spock.lang.Specification
 
-class HeatingFeatureSpec extends Specification implements DomainUnitTest<HeatingFeature> {
+class BusSpec extends Specification implements DomainUnitTest<Bus> {
 
     def setup() {
     }

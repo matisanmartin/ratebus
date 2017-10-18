@@ -1,10 +1,9 @@
-package ratebus
+package ratebus.transport
 
 import grails.testing.gorm.DomainUnitTest
-import ratebus.rating.CleannessRating
 import spock.lang.Specification
 
-class CleannessRatingSpec extends Specification implements DomainUnitTest<CleannessRating> {
+class DriverSpec extends Specification implements DomainUnitTest<Driver> {
 
     def setup() {
     }

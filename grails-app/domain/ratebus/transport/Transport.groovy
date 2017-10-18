@@ -1,32 +1,24 @@
 package ratebus.transport
 
 import groovy.time.TimeCategory
+import ratebus.company.Company
 import ratebus.rating.GeneralRating
 import ratebus.user.User
-import ratebus.user.Address
 
 class Transport {
 
     protected String name
 
-    protected String ownerCompany
-
-    protected String contactNumber
-
-    protected Address address
-
-    protected String country
-
-    protected String city
+    protected Company company
 
     protected Set<GeneralRating> allRatings
 
+    protected Set<BranchLine> branchLines
+
     static constraints = {
-        name nullable: false, blank: false, unique: true
-        ownerCompany nullable: false, blank: false, unique: true
-        address nullable: false
-        country nullable: false, blank: false
-        city nullable: false, blank: false
+        name nullable: false, blank: false
+        allRatings nullable: true
+        company nullable: false
     }
 
     def getCleannessRating() {
@@ -72,5 +64,13 @@ class Transport {
 
         generalRating.user = user
         allRatings.add(generalRating)
+    }
+
+    def getLine() {
+        ""
+    }
+
+    def getAllLines() {
+        []
     }
 }

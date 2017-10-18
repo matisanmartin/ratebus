@@ -1,4 +1,4 @@
-package ratebus
+package ratebus.rating
 
 import grails.testing.gorm.DomainUnitTest
 import ratebus.rating.ConditionRating

@@ -2,14 +2,9 @@ package ratebus.transport
 
 class Subway extends Transport {
 
-    SubwayLine line
+    List<Stop> subwayStops
 
     static constraints = {
         importFrom Transport
-        line nullable: false, blank: false
-    }
-
-    enum SubwayLine {
-        A, B, C, D, E, H
     }
 }

@@ -1,10 +1,10 @@
-package ratebus
+package ratebus.transport
 
 import grails.testing.gorm.DomainUnitTest
-import ratebus.transport.Cab
+import ratebus.transport.Train
 import spock.lang.Specification
 
-class CabSpec extends Specification implements DomainUnitTest<Cab> {
+class TrainSpec extends Specification implements DomainUnitTest<Train> {
 
     def setup() {
     }

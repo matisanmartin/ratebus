@@ -1,10 +1,10 @@
-package ratebus
+package ratebus.feature
 
 import grails.testing.gorm.DomainUnitTest
-import ratebus.rating.ConditionRating
+import ratebus.feature.Feature
 import spock.lang.Specification
 
-class ConditionRatingSpec extends Specification implements DomainUnitTest<ConditionRating> {
+class FeatureSpec extends Specification implements DomainUnitTest<Feature> {
 
     def setup() {
     }

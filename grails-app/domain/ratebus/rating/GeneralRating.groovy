@@ -1,6 +1,8 @@
 package ratebus.rating
 
 import ratebus.feature.Feature
+import ratebus.transport.BranchLine
+import ratebus.transport.Transport
 import ratebus.user.User
 
 class GeneralRating {
@@ -15,10 +17,15 @@ class GeneralRating {
 
     User user
 
+    BranchLine branchLine
+
     static final FEATURE_ACCUM_FACTOR = 16
 
     static constraints = {
         creationDate nullable: false
+        ratings nullable: false
+        user nullable: false
+        branchLine nullable: true
     }
 
     def calculateGeneralRating() {
