@@ -10,19 +10,4 @@ class CleannessRating extends Rating {
     def getCleannessRating() {
         getRatingNumberValue()
     }
-
-    @Override
-    def getRouteRating() {
-        0
-    }
-
-    @Override
-    def getConditionRating() {
-        0
-    }
-
-    @Override
-    def getFrequencyRating() {
-        0
-    }
 }

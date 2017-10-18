@@ -8,6 +8,6 @@ class Feature {
     }
 
     def isPresent() {
-        return present;
+        return present
     }
 }

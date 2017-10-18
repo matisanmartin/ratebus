@@ -38,11 +38,11 @@ class GeneralRating {
     }
 
     def getConditionRating() {
-        ratings.collect { it.getCleannessRating() }.sum() / ratings.size()
+        ratings.collect { it.getConditionRating() }.sum() / ratings.size()
     }
 
     def getFrequencyRating() {
-        ratings.collect { it.getCleannessRating() }.sum() / ratings.size()
+        ratings.collect { it.getFrequencyRating() }.sum() / ratings.size()
     }
 
     def getRouteRating() {

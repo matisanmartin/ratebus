@@ -22,9 +22,14 @@ class Transport {
     protected Set<GeneralRating> allRatings
 
     static constraints = {
+        name nullable: false, blank: false, unique: true
+        ownerCompany nullable: false, blank: false, unique: true
+        address nullable: false
+        country nullable: false, blank: false
+        city nullable: false, blank: false
     }
 
-    def getCleannesRating() {
+    def getCleannessRating() {
         allRatings.collect({ it.getCleannessRating() }).sum() / allRatings.size()
     }
 

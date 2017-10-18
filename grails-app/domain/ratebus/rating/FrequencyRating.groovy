@@ -7,22 +7,7 @@ class FrequencyRating extends Rating {
     }
 
     @Override
-    def getCleannessRating() {
-        0
-    }
-
-    @Override
-    def getRouteRating() {
-        0
-    }
-
-    @Override
     def getConditionRating() {
         getRatingNumberValue()
-    }
-
-    @Override
-    def getFrequencyRating() {
-        0
     }
 }

@@ -11,7 +11,7 @@ class RankingService {
     }
 
     def getBestTransportsOrderedByCleannessRating() {
-        Transport.findAll().sort { -it.getCleannesRating() }
+        Transport.findAll().sort { -it.getCleannessRating() }
     }
 
     def getBestTransportsOrderedByFrequencyRating() {

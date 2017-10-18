@@ -1,8 +1,7 @@
 package ratebus.rating
 
-import ratebus.RatingCalculator
 
-abstract class Rating implements RatingCalculator {
+abstract class Rating  {
 
     RatingNumber ratingNumber
 
@@ -18,7 +17,7 @@ abstract class Rating implements RatingCalculator {
     }
 
     enum RatingNumber {
-        VERY_BAD(1), BAD(2), REGULAR(3), GOOD(4), REALLY_GOOD(5)
+        NO_RATING(0), VERY_BAD(1), BAD(2), REGULAR(3), GOOD(4), REALLY_GOOD(5)
 
         Integer value
 
@@ -29,6 +28,22 @@ abstract class Rating implements RatingCalculator {
         def getValue() {
             this.value
         }
+    }
+
+    def getCleannessRating() {
+        RatingNumber.NO_RATING.getValue()
+    }
+
+    def getRouteRating() {
+        RatingNumber.NO_RATING.getValue()
+    }
+
+    def getConditionRating() {
+        RatingNumber.NO_RATING.getValue()
+    }
+
+    def getFrequencyRating() {
+        RatingNumber.NO_RATING.getValue()
     }
 
 }
