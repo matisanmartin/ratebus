@@ -8,5 +8,6 @@ class Cab extends Transport {
 
     static constraints = {
         importFrom Transport
+        licensePlate nullable: false, blank: false
     }
 }
