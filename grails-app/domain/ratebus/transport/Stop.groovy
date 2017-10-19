@@ -6,6 +6,5 @@ class Stop {
 
     static constraints = {
         name nullable: false, blank: false
-        transport nullable: false
     }
 }

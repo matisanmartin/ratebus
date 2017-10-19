@@ -6,14 +6,15 @@ import spock.lang.Specification
 
 class BusSpec extends Specification implements DomainUnitTest<Bus> {
 
+    Bus bus
     def setup() {
+        bus = new Bus()
     }
 
     def cleanup() {
     }
 
-    void "test something"() {
-        expect:"fix me"
-            true == false
+    void "test create Bus with no stops"() {
+
     }
 }

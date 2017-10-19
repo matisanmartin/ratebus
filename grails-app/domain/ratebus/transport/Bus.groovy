@@ -1,10 +1,10 @@
 package ratebus.transport
 
-class Bus extends Transport {
-
-    List<Stop> busStops
+class Bus extends StopTransport {
 
     static constraints = {
-        importFrom Transport
+
     }
+
+
 }
