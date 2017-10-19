@@ -24,7 +24,7 @@ class GeneralRatingSpec extends Specification implements DomainUnitTest<GeneralR
     def cleanup() {
     }
 
-    void "test something"() {
+    void "test calculate general rating is 4 if all the ratings ar good"() {
         when:
         def avg = generalRating.calculateGeneralRating()
 

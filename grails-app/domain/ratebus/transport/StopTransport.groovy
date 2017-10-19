@@ -2,7 +2,7 @@ package ratebus.transport
 
 class StopTransport extends Transport {
 
-    List<Stop> stops
+    protected List<Stop> stops
 
     static constraints = {
         importFrom Transport

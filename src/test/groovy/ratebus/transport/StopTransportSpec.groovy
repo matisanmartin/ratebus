@@ -24,14 +24,6 @@ class StopTransportSpec extends Specification implements DomainUnitTest<StopTran
     def cleanup() {
     }
 
-    void "test create stop transport and add stop when stops are null"() {
-        when:
-        stopTransport.stops = null
-
-        then:
-        stopTransport.validate(['stops'])
-    }
-
     void "test create stop transport and add stop when stops are empty"() {
         when:
         stopTransport.stops = []
