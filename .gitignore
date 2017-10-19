@@ -1,4 +1,5 @@
 Thumbs.db
+out/
 .DS_Store
 .gradle
 build/
