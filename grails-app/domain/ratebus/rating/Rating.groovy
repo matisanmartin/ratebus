@@ -1,11 +1,19 @@
 package ratebus.rating
 
+import java.time.DayOfWeek
+
 
 abstract class Rating  {
 
     RatingNumber ratingNumber
 
     String comment
+
+    String hourSince
+
+    String hourUnitl
+
+    List<DayOfWeek> days;
 
     static constraints = {
         ratingNumber nullable: false, blank: false
