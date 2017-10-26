@@ -3,6 +3,7 @@ package ratebus.transport
 import groovy.time.TimeCategory
 import ratebus.company.Company
 import ratebus.rating.GeneralRating
+import ratebus.rating.Rating.RatingType
 import ratebus.user.User
 
 class Transport {
@@ -21,20 +22,9 @@ class Transport {
         company nullable: false
     }
 
-    def getCleannessRating() {
-        allRatings.collect({ it.getCleannessRating() }).sum() / allRatings.size()
-    }
-
-    def getConditionRating() {
-        allRatings.collect { it.getConditionRating() }.sum() / allRatings.size()
-    }
-
-    def getRouteRating() {
-        allRatings.collect { it.getRouteRating() }.sum() / allRatings.size()
-    }
-
-    def getFrequencyRating() {
-        allRatings.collect { it.getFrequencyRating() }.sum() / allRatings.size()
+    def getRatingByType(RatingType type) {
+        def ratingsByType = allRatings.collect { it.getRatingByType(type) }
+        ratingsByType.collect { it.getRatingNumberValue() }.sum() / ratingsByType.size()
     }
 
     def getGeneralRating() {

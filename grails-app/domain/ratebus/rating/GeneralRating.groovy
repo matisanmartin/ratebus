@@ -2,7 +2,7 @@ package ratebus.rating
 
 import ratebus.feature.Feature
 import ratebus.transport.BranchLine
-import ratebus.transport.Transport
+import ratebus.rating.Rating.RatingType
 import ratebus.user.User
 
 class GeneralRating {
@@ -40,20 +40,8 @@ class GeneralRating {
         features.count { it.isPresent() } / FEATURE_ACCUM_FACTOR
     }
 
-    def getCleannessRating() {
-        ratings.collect{ it.getCleannessRating() }.sum() / ratings.size()
-    }
-
-    def getConditionRating() {
-        ratings.collect { it.getConditionRating() }.sum() / ratings.size()
-    }
-
-    def getFrequencyRating() {
-        ratings.collect { it.getFrequencyRating() }.sum() / ratings.size()
-    }
-
-    def getRouteRating() {
-        ratings.collect { it.getRouteRating() }.sum() / ratings.size()
+    def getRatingByType(RatingType type) {
+        ratings.find { it.getRatingType() == type }
     }
 
 }

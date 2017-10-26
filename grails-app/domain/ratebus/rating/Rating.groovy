@@ -3,9 +3,11 @@ package ratebus.rating
 import java.time.DayOfWeek
 
 
-abstract class Rating  {
+class Rating {
 
     RatingNumber ratingNumber
+
+    RatingType ratingType
 
     String comment
 
@@ -13,7 +15,7 @@ abstract class Rating  {
 
     String hourUnitl
 
-    List<DayOfWeek> days;
+    List<DayOfWeek> days
 
     static constraints = {
         ratingNumber nullable: false, blank: false
@@ -24,12 +26,16 @@ abstract class Rating  {
         this.ratingNumber.getValue()
     }
 
+    enum RatingType {
+        CLEANNESS, CONDITION, FREQUENCY, ROUTE
+    }
+
     enum RatingNumber {
         NO_RATING(0), VERY_BAD(1), BAD(2), REGULAR(3), GOOD(4), REALLY_GOOD(5)
 
         Integer value
 
-        RatingNumber(Integer value){
+        RatingNumber(Integer value) {
             this.value = value
         }
 
@@ -37,21 +43,4 @@ abstract class Rating  {
             this.value
         }
     }
-
-    def getCleannessRating() {
-        RatingNumber.NO_RATING.getValue()
-    }
-
-    def getRouteRating() {
-        RatingNumber.NO_RATING.getValue()
-    }
-
-    def getConditionRating() {
-        RatingNumber.NO_RATING.getValue()
-    }
-
-    def getFrequencyRating() {
-        RatingNumber.NO_RATING.getValue()
-    }
-
 }

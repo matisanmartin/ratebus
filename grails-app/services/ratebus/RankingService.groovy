@@ -2,6 +2,7 @@ package ratebus
 
 import grails.gorm.transactions.Transactional
 import ratebus.transport.Transport
+import ratebus.rating.Rating.RatingType
 
 @Transactional
 class RankingService {
@@ -11,18 +12,18 @@ class RankingService {
     }
 
     def getBestTransportsOrderedByCleannessRating() {
-        Transport.findAll().sort { -it.getCleannessRating() }
+        Transport.findAll().sort { -it.getRatingByType(RatingType.CLEANNESS) }
     }
 
     def getBestTransportsOrderedByFrequencyRating() {
-        Transport.findAll().sort { -it.getFrequencyRating() }
+        Transport.findAll().sort { -it.getRatingByType(RatingType.FREQUENCY) }
     }
 
-    def getBestTransportsOrderedByCondition() {
-        Transport.findAll().sort { -it.getConditionRating() }
+    def getBestTransportsOrderedByConditionRating() {
+        Transport.findAll().sort { -it.getRatingByType(RatingType.CONDITION) }
     }
 
     def getBestTransportsOrderedByRoute() {
-        Transport.findAll().sort { -it.getRouteRating() }
+        Transport.findAll().sort { -it.getRatingByType(RatingType.ROUTE) }
     }
 }

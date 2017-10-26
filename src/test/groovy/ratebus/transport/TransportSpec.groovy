@@ -1,13 +1,9 @@
 package ratebus.transport
 
 import grails.testing.gorm.DomainUnitTest
-import ratebus.rating.CleannessRating
-import ratebus.rating.ConditionRating
-import ratebus.rating.FrequencyRating
+
 import ratebus.rating.GeneralRating
 import ratebus.rating.Rating
-import ratebus.rating.RouteRating
-import ratebus.transport.Transport
 import spock.lang.Specification
 
 class TransportSpec extends Specification implements DomainUnitTest<Transport> {
@@ -19,10 +15,10 @@ class TransportSpec extends Specification implements DomainUnitTest<Transport> {
     List<Rating> ratings
 
     def setup() {
-        ratings = [new CleannessRating(ratingNumber: Rating.RatingNumber.GOOD),
-                   new RouteRating(ratingNumber: Rating.RatingNumber.GOOD),
-                   new FrequencyRating(ratingNumber: Rating.RatingNumber.GOOD),
-                   new ConditionRating(ratingNumber: Rating.RatingNumber.GOOD)
+        ratings = [new Rating(ratingNumber: Rating.RatingNumber.GOOD),
+                   new Rating(ratingNumber: Rating.RatingNumber.GOOD),
+                   new Rating(ratingNumber: Rating.RatingNumber.GOOD),
+                   new Rating(ratingNumber: Rating.RatingNumber.GOOD)
         ]
 
         def generalRating = new GeneralRating(ratings: ratings)

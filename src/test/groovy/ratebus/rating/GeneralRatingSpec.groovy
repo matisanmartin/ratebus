@@ -1,9 +1,6 @@
 package ratebus.rating
 
 import grails.testing.gorm.DomainUnitTest
-import ratebus.rating.ConditionRating
-import ratebus.rating.GeneralRating
-import ratebus.rating.Rating
 import spock.lang.Specification
 
 class GeneralRatingSpec extends Specification implements DomainUnitTest<GeneralRating> {
@@ -12,10 +9,10 @@ class GeneralRatingSpec extends Specification implements DomainUnitTest<GeneralR
     GeneralRating generalRating
 
     def setup() {
-        ratings = [new ConditionRating(ratingNumber: Rating.RatingNumber.GOOD),
-                   new ConditionRating(ratingNumber: Rating.RatingNumber.GOOD),
-                   new ConditionRating(ratingNumber: Rating.RatingNumber.GOOD),
-                   new ConditionRating(ratingNumber: Rating.RatingNumber.GOOD)
+        ratings = [new Rating(ratingNumber: Rating.RatingNumber.GOOD),
+                   new Rating(ratingNumber: Rating.RatingNumber.GOOD),
+                   new Rating(ratingNumber: Rating.RatingNumber.GOOD),
+                   new Rating(ratingNumber: Rating.RatingNumber.GOOD)
         ]
 
         generalRating = new GeneralRating(ratings: ratings, features: [])
